@@ -11,13 +11,38 @@ h1{
     font-family: Cabin;
 }
 
-div.gallery{
-    
+iframe{
+    width:1500px;
+    height:715px;
+    padding:10px;
+    margin-left: 150px;
+    border: 0px;
 }
+.navbar {
+    overflow: hidden;
+    background-color: #353333;
+    font-family: Cabin;
+    position: sticky;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 282px;
+}
+
+.navbar a:hover{
+    background-color: black;
+}
+
 
 .responsive{
     float:left;
-    padding: 5px;
+    padding: 70px;
 }
 
 div.desc {
@@ -29,7 +54,16 @@ div.desc {
     color:white;
 }
 
-iframe{
-    width:1285px;
-    height:515; 
+
+
+.voorstelling{
+    float: left;
+    padding:15px;
+}
+
+#foto{
+    
+    width: 650px;
+    height: 400px;
+    margin-left: 150px;
 }
