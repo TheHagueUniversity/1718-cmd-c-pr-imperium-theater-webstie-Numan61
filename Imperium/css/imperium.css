@@ -14,8 +14,15 @@ h1{
 
 h3{
     color:white;
+    margin-left: 100px;
+    font-family: Cabin;
 }
 
+p{
+    color:white;
+    margin-left:100px;
+    font-family: Cabin;
+}
 iframe{
     width:1500px;
     height:715px;
@@ -63,7 +70,7 @@ footer{
     background-color: #353333;
     float:left;
     width: 100%;
-    height: 100px;
+    height: 200px;
     
 }
 
@@ -88,4 +95,13 @@ div.desc1 {
     width: 650px;
     height: 400px;
     margin-left: 150px;
+}
+
+#nieuwsbrief{
+    margin-left:100px;
+    
+}
+
+#submit{
+    margin-left:107px;
 }
