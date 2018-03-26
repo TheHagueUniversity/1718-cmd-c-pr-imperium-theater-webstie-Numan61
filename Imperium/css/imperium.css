@@ -19,6 +19,9 @@ h3{
 }
 
 p{
+    color:black;
+}
+.p{
     color:white;
     margin-left:100px;
     font-family: Cabin;
@@ -104,4 +107,40 @@ div.desc1 {
 
 #submit{
     margin-left:107px;
+}
+
+#rectangle{
+    width: 1700px;
+    height: 1200px;
+    background-color: white;
+    margin-left:100px;
+}
+
+#hf1{
+    color:black;
+}
+
+#image3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 600px;
+}
+
+#info{
+    margin-left:100px;
+}
+
+.wrapper1{
+    
+    margin-top: 150px;
+}
+
+#contact{
+    border:1px black; 
+    border-style:solid;
+    width:300px;
+    height:200px;
+    margin-left:100px;
 }
