@@ -18,6 +18,10 @@ h3{
     font-family: Cabin;
 }
 
+#bericht{
+    color:black;
+}
+
 p{
     color:black;
 }
@@ -73,7 +77,7 @@ footer{
     background-color: #353333;
     float:left;
     width: 100%;
-    height: 200px;
+    height: 300px;
     
 }
 
@@ -116,6 +120,22 @@ div.desc1 {
     margin-left:100px;
 }
 
+#rectangle1{
+    width: 1700px;
+    height: 800px;
+    background-color: white;
+    margin-left:100px;
+}
+
+#rectangle2{
+    float:left;
+    height:100px;  
+    width:100px;
+    background-color: red;
+    margin-left:1300px;
+    margin-bottom:700px;
+}
+
 #hf1{
     color:black;
 }
@@ -128,19 +148,57 @@ div.desc1 {
     height: 600px;
 }
 
-#info{
+.info{
     margin-left:100px;
 }
 
 .wrapper1{
     
-    margin-top: 150px;
+    margin-top: 100px;
+    width:600px;
 }
 
 #contact{
     border:1px black; 
     border-style:solid;
     width:300px;
-    height:200px;
+    height:250px;
     margin-left:100px;
+    padding:16px;
+    margin-top:10px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+#bericht{
+    height:70px
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+        background-color: white;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#nieuwsbrief{
+    width:300px;
+    float:left;
+    margin-left:50px;
+    
 }
