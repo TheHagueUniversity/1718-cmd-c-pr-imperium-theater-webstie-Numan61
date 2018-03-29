@@ -1,12 +1,15 @@
+<!-- REVIEW
+Waar zijn de comments?
+-->
 <!DOCTYPE html!>
 
 <html lang="nl">
 <head>
 	<meta charset="UTF-8" />
 	<title>Imperium</title>
-	<link href="css/imperium.css" type="text/css" rel="stylesheet"> 
-    
-    
+	<link href="css/imperium.css" type="text/css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -16,6 +19,10 @@
         </a>
     </header>
     <div class="navbar">
+			<!-- REVIEW
+			gebruik geen div voor de navigatie maar een <nav>
+			het is gebruikelijk om een menu met een ul uit te werken. Alle menu-links zijn lijstitems
+  		-->
         <a href="agenda.html">Agenda</a>
         <a href="fotoboek.html">Fotoboek</a>
         <a href="theater.html">Theater Huren</a>
@@ -23,20 +30,35 @@
         <a href="over.html">Over ons</a>
         <a href="contact.html">Contact</a>
     </div>
-    
+		<!-- REVIEW
+		lay-out element? <section> of <main>
+	  -->
+
 	<h1>Welkom bij het Imperium</h1>
 	<iframe
 		src="https://www.youtube.com/embed/7GkHjIkR460">
 	</iframe>
+<!-- REVIEW
+hier zou je een comment kunnen plaatsen wat voor film het is
+-->
 	<br>
+<!-- REVIEW
+<br> mag je niet als styling (margin) gebruiken
+-->
     <div class="voorstelling">
+			<!-- REVIEW
+			dit is een <article>
+			-->
         <div class="gallery1">
          <a href="images/pic1.png"></a>
             <img id='foto' src="images/pic1.png">
+						<!-- REVIEW
+						img heeft verplichte attributen
+						-->
         </div>
         <div class="desc1">Over iedereen die er niet is</div>
     </div>
-    
+
     <div class="voorstelling">
         <div class="gallery1">
          <a  href="images/pic2.png"></a>
@@ -44,8 +66,11 @@
         </div>
         <div class="desc1">De Canadese Muur</div>
     </div>
-    
+
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<!-- REVIEW
+		styling mag niet in html
+		-->
     <div class="vier">
         <div class="responsive">
             <div class="gallery">
@@ -84,6 +109,9 @@
         <p class='p'>Wilt u op de hoogte gehouden worden van onze activiteiten,<br> schrijf u dan meteen in voor de nieuwsbrief. </p>
     <form method="GET" id="nieuwsbrief">
         <input type="text" id="nieuwsbrief" name="nieuwsbrief" value=""> <br>
+				<!-- REVIEW
+				wat moeten gebruikers invullen in bovenstaand veld? Hun email-adres? Welk input type moet je dan gebruiken?
+				-->
           <input type="submit" id="submit" value="Verstuur">
     </form>
     </footer>
