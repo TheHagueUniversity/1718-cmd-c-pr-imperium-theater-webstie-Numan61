@@ -26,6 +26,7 @@
     <section>
         <div id="rectangle1">
             <div class="lijn">                 <!-- De class "lijn" dient voor de betalingsprocedure. -->
+							<!-- REVIEW: ook met classnames kun/moet je semantisch werken -->
                 <div class="circle1">1</div>
                 <div class="circle">2</div>
                 <div class="circle">3</div>
@@ -47,20 +48,21 @@
                 <table>
                     <tr>
                         <th>Type</th>
-                        <th>Prijs</th> 
+                        <th>Prijs</th>
                         <th>Aantal</th>
                     </tr>
+										<!-- REVIEW: probeer wel het label element te gebruiken! -->
                     <tr>
                         <td>Normaal</td>
                         <td>€ 12,00</td>
-                        <td><input type="number" class="breed" min="0" max="5" name="aantal" value=""></td> 
+                        <td><input type="number" class="breed" min="0" max="5" name="aantal" value=""></td>
                         <td>Normaal</td>
                         <td>...</td>
                     </tr>
                     <tr>
                         <td>Kind</td>
                         <td>€ 8,00</td>
-                        <td><input type="number" class="breed" min="0" max="5" name="aantal" value=""></td>     
+                        <td><input type="number" class="breed" min="0" max="5" name="aantal" value=""></td>
                         <td>Kind</td>
                         <td>...</td>
                     </tr>
@@ -93,14 +95,15 @@
                         <td>Totaal:</td>
                         <td>...</td>
                     </tr>
-                </table> 
+                </table>
            </form>
            <div class="klik">                         <!-- De class "klik" dient voor de buttons "vorige" en "volgende" waarbij er geklikt kan worden door de proces -->
                <button id=button3><a href="bestel.html">Vorige</a></button>
                <button id=button2><a href="plaatskeuze.html">Volgende</a></button>
+							 <!-- REVIEW: gebruik input type=submit in plaats van button element -->
            </div>
         </div>
-    </section>    
+    </section>
     <footer>                                <!-- Dit is de footer -->
         <div class="nieuws">
             <h3>Nieuwsbrief?</h3>

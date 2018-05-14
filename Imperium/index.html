@@ -14,7 +14,9 @@ Waar zijn de comments?
        <a href="index.html">
             <img id="logo" src="images/logo.png" alt="logo" />  <!-- Dit is het logo van het Imperium en dient ook als een home button -->
         </a>
+				<!-- REVIEW: Voor het logo wordt ook vaak het h1 element gebruikt -->
     </header>
+		<!-- REVIEW: waarom zit het menu niet in de header -->
     <nav>
         <a href="agenda.html">Agenda</a>
         <a href="fotoboek.html">Fotoboek</a>            <!-- Dit is de navigatie menu -->
@@ -22,13 +24,16 @@ Waar zijn de comments?
         <a href="reserveren.html">Reserveren</a>
         <a href="over.html">Over ons</a>
         <a href="contact.html">Contact</a>
+				<!-- REVIEW: een menu wordt vaak opgebouwd middels een <ul> -->
     </nav>
     <section>
+			<!-- REVIEW: dit zou een <main> kunnen zijn, belangrijkste info van de pagina -->
         <h1>Welkom bij het Imperium</h1>
         <iframe id="video"
             src="https://www.youtube.com/embed/7GkHjIkR460">  <!-- Dit is een teaser video van het Imperium. Het is niet echt van het Imperium,omdat er geen video clipjes beschikbaar zijn -->
         </iframe>
-        <div class="voorstelling">                            <!-- Dit is de class "voorstelling" en dit dient voor de twee voorstellingen die getoond wordt, waarbij er geklikt kan worden--> 
+        <div class="voorstelling">
+					<!-- REVIEW: een voorstelling zou je ook kunnen weergeven als <article> of <li>, in plaats van een div #semantiek -->                           <!-- Dit is de class "voorstelling" en dit dient voor de twee voorstellingen die getoond wordt, waarbij er geklikt kan worden--> 
             <div class="gallery1">
                 <a href="images/pic1.png"></a>
                     <img id='foto' src="images/pic1.png" alt="voorstelling foto">
