@@ -1,0 +1,101 @@
+<!DOCTYPE html!>
+
+<html lang="nl">
+<head>
+	<meta charset="UTF-8" />
+	<title>Imperium</title>
+	<link href="css/imperium.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<header>
+     <a href="index.html">
+        <img id="logo" src="images/logo.png" alt="logo" />      <!-- Dit is het logo van het Imperium en dient ook als een home button -->
+    </a>
+    </header>
+    <nav>                                    <!-- Dit is de navigatie menu -->
+        <a href="agenda.html">Agenda</a>
+        <a href="fotoboek.html">Fotoboek</a>
+        <a href="theater.html">Theater Huren</a>
+        <a href="reserveren.html">Reserveren</a>
+        <a href="over.html">Over ons</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section>
+        <div id="rectangle1">                
+            <div class="lijn">              <!-- De class "lijn" dient voor de betalingsprocedure. -->
+                <div class="circle">1</div>
+                <div class="circle1">2</div>
+                <div class="circle">3</div>
+                <div class="circle">4</div>
+            </div>
+            <div class="tekst">               <!-- De class "tekst" dient voor de tekst onder de betalingsprocedure. -->
+                <ul>
+                    <li>Tickets- en plaatskeuze</li>
+                    <li>Gegevens</li>
+                    <li>Betaling- en afleverwijze</li>
+                    <li>Betaling</li>
+                </ul>
+           </div>
+            <div id="box1">
+                <h2>Gegevens</h2>
+            </div>
+            <div class ="gegevens">            <!-- De class "gegevens" houdt in dat er een formulier aanwezig is waarbij er gegevens ingevuld moet worden. -->
+                <form method="GET" id="gegevens">
+                    <div class="geslacht">      <!-- De class "geslacht" wordt gebruikt voor het kiezen van het geslacht. -->
+                        <label for="man">Heer</label>
+                            <input type="radio" name="geslacht" id="man" value="man"><br>
+                        <label for="vrouw">Mevrouw</label>
+                            <input type="radio" name="geslacht" id="mevrouw" value="mevrouw"><br>
+                    </div>
+                    <div class="naam">          <!-- De class "naam" wordt gebruikt voor het invullen van je voorletter, voornaam en achternaam. -->
+                        <label for="vletter">Voorletters</label>
+                            <input type="text"  id="vletter" value="">
+                        <label for="vnaam">Voornaam</label>
+                            <input type="text"  id="vnaam" value="">
+                        <label for="anaam">Achternaam</label>
+                            <input type="text" id="anaam" value="">
+                   </div>
+                   <div class="verblijf">       <!-- De class "verblijf" wordt gebruikt voor het invullen van je adres en huisnummer -->
+                        <label for="adres">Adres</label>
+                            <input type="text" id="verblijf">
+                        <label for="huisnr">Huisnummer</label>
+                            <input type="text" id="verblijf">
+                   </div>
+                   <div class="verblijf1">      <!-- De class "verblijf1" wordt gebruikt voor het invullen van de postcode en plaats. -->
+                        <label for="postc">Postcode</label>
+                            <input type="text" id="verblijf1">
+                        <label for="plaats">Plaats</label>
+                            <input type="text" id="verblijf1">   
+                   </div>
+               </form>
+           </div>
+           <div class="klik">                    <!-- De class "klik" dient voor de buttons "vorige" en "volgende" waarbij er geklikt kan worden door de proces -->
+               <button id=button3><a href="plaatskeuze.html">Vorige</a></button>
+               <button id=button2><a href="betaling.html">Volgende</a></button>
+           </div>
+        </div>
+    </section>
+    <footer>                                <!-- Dit is de footer -->
+        <div class="nieuws">
+            <h3>Nieuwsbrief?</h3>
+                <p class='p'>Wilt u op de hoogte gehouden worden van onze activiteiten,<br> schrijf u dan meteen in voor de nieuwsbrief. </p>
+            <form method="GET" id="nieuwsbrief">    <!-- Dit is een formulier,waarbij er ingeschreven kan worden voor de nieuwsbrief -->
+                <input type="email" id="nieuwsbrief" name="nieuwsbrief" value=""> <br>
+                <input type="submit" id="submit" value="Verstuur">
+            </form>
+        </div>
+        <div class="social">                 <!-- Dit is de class "social" en dient voor de social media. -->
+            <h3>Social media</h3>
+                <a href="https://www.facebook.com/ToneelgroepImperium?fref=ts">
+                    <img id="fb" src="images/facebook.png" alt="facebookLogo" />
+                </a>
+                <a href="https://twitter.com/imperiumtheater">
+                    <img id="fb" src="images/twitter.png" alt="twitterLogo" />
+                </a>
+                <a href="https://www.instagram.com/explore/locations/1627979/imperium-theater/">
+                    <img id="fb" src="images/insta.png" alt="instagramLogo" />
+                </a>
+        </div>
+    </footer>
+</body>
+</html>

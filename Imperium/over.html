@@ -12,40 +12,48 @@
 <body>
 	<header>
      <a href="index.html">
-        <img id="logo" src="images/logo.png" alt="logo" />
+        <img id="logo" src="images/logo.png" alt="logo" /> <!-- Dit is het logo van het Imperium en dient ook als een home button -->
     </a>
     </header>
-    <div class="navbar">
+    <nav>
         <a href="agenda.html">Agenda</a>
         <a href="fotoboek.html">Fotoboek</a>
-        <a href="theater.html">Theater Huren</a>
+        <a href="theater.html">Theater Huren</a>        <!-- Dit is de navigatie menu -->
         <a href="reserveren.html">Reserveren</a>
         <a href="over.html">Over ons</a>
         <a href="contact.html">Contact</a>
-    </div>
-<!-- REVIEW
-lay-out element
--->
-	<div id="rectangle">
-        <h1 id="hf1">Over ons</h1>
-        <img id="image3" src="images/over.png" alt="image"/><br>
-				<!-- REVIEW
-				alt = image?
-				gebruik geen <br> voor styling
-				-->
-            <p>Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. <br>Het theater wordt regelmatig verhuurd aan andere gezelschappen. </p>
-            <p>Hier vind je meer informatie over wat een Imperium-lidmaatschap inhoudt en hoe je lid kunt worden</p>
-            <p>Ons archief laat zien welke stukken we hebben gespeeld sinds 2001. Ook kun je hier productiefoto’s bekijken.</p>
-            <p>Ben je enthousiast over Imperium, maar zie je jezelf niet op de planken staan? Dan is vriend worden wellicht wat voor jou!</p>
-    </div>
-    <br>
-<footer>
-    <h3>Nieuwsbrief?</h3>
-        <p class='p'>Wilt u op de hoogte gehouden worden van onze activiteiten,<br> schrijf u dan meteen in voor de nieuwsbrief. </p>
-    <form method="GET" id="nieuwsbrief">
-        <input type="text" id="nieuwsbrief" name="nieuwsbrief" value=""> <br>
-          <input type="submit" id="submit" value="Verstuur">
-    </form>
+    </nav>
+    <section>
+        <div id="rectangle">                            <!-- Dit gedeelte dient voor de titel, afbeelding en tekst van de pagina -->
+            <h1 id="hf1">Over ons</h1>
+            <img id="image3" src="images/over.png" alt="image"/>
+                <p>Toneelgroep Imperium is een actief amateurtheatergezelschap uit Leiden. Imperium is opgericht in 1957 en telt ongeveer 60 actieve leden. Wij hebben ook ons eigen theater, gevestigd in het hart van de Leidse binnenstad. <br>Het theater wordt regelmatig verhuurd aan andere gezelschappen. </p>
+                <p>Hier vind je meer informatie over wat een Imperium-lidmaatschap inhoudt en hoe je lid kunt worden</p>
+                <p>Ons archief laat zien welke stukken we hebben gespeeld sinds 2001. Ook kun je hier productiefoto’s bekijken.</p>
+                <p>Ben je enthousiast over Imperium, maar zie je jezelf niet op de planken staan? Dan is vriend worden wellicht wat voor jou!</p>
+        </div>
+    </section>
+    <footer>
+        <div class="nieuws">
+            <h3>Nieuwsbrief?</h3>
+                <p class='p'>Wilt u op de hoogte gehouden worden van onze activiteiten,<br> schrijf u dan meteen in voor de nieuwsbrief. </p>
+            <form method="GET" id="nieuwsbrief">          <!-- Dit is een formulier,waarbij er ingeschreven kan worden voor de nieuwsbrief -->
+                <input type="email" id="nieuwsbrief" name="nieuwsbrief" value=""> <br>
+                  <input type="submit" id="submit" value="Verstuur">
+            </form>
+        </div>
+            <div class="social">                             <!-- Dit is de class "social" en dient voor de social media. -->
+            <h3>Social media</h3>
+            <a href="https://www.facebook.com/ToneelgroepImperium?fref=ts">
+                <img id="fb" src="images/facebook.png" alt="facebookLogo" />
+            </a>
+            <a href="https://twitter.com/imperiumtheater">
+                <img id="fb" src="images/twitter.png" alt="twitterLogo" />
+            </a>
+             <a href="https://www.instagram.com/explore/locations/1627979/imperium-theater/">
+                <img id="fb" src="images/insta.png" alt="instagramLogo" />
+            </a>
+            </div>
     </footer>
 </body>
 </html>

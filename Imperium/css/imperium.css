@@ -1,51 +1,75 @@
 /* gebruik comments om je CSS te ordenen, bijvoorbeeld /* Typografie */ 
-@font-face{
+@font-face{                 /* Dit is de geïmporteerde font */
     font-family: Cabin;
     src:url(cabin.woff)
 }
 body{
-	background-color: 810D30;
+	background-color: 810D30;      /* Dit is de kleur van de achtergrond op elke pagina */
 }
 
-h1{
+h1{                                /* Dit is de h1 en hierbij is de kleur wit met de font "Cabin"*/
 	color:white;
     font-family: Cabin;
     padding: 20px;
 }
+h2{                                /* Dit is de h2 en hierbij is de kleur wit met de font "Cabin"*/
+    color:white;
+    margin-left:20px;
+    font-family: Cabin;
+}
 
-h3{
+h3{                                 /* Dit is de h3 en hierbij is de kleur wit met de font "Cabin"*/
     color:white;
     margin-left: 100px;
     font-family: Cabin;
 }
 
-#bericht{
+p{                                  /* Dit is de element "p" met de kleur zwart en de font "Cabin" */
     color:black;
-}
-
-p{
-    color:black;
-}
-.p{
-    color:white;
-    margin-left:100px;
     font-family: Cabin;
 }
-iframe{
+
+p1{                                 /* Dit is de element "p1" met de kleur wit en de font "Cabin" */
+    float:right;
+    margin-top: 100px;
+    color:white;
+    font-family: Cabin;
+}
+p2{                                 /* Dit is de element "p2" met de kleur wit, grootte is 16px en de font "Cabin" */
+    font-size: 16px;
+    font-family: Cabin;
+    float:left;
+    margin-top:10px;
+    margin-left:100px;
+    
+}
+p3{                                  /* Dit is de element "p3" met de font "Cabin" */
+    margin-left:20px;
+    font-family: Cabin;
+}
+p4{                                 /* Dit is de element "p4" met de font "Cabin" */
+    margin-left:20px;   
+    float:left;
+    font-family: Cabin;
+}
+p5{                                 /* Dit is de element "p5" met de font "Cabin" */
+    margin-top:100px;
+}
+iframe{                             /* Dit is de element "iframe" en dit dient voor de kaart van het Imperium. Herbij wordt de grootte aangegeven. */
     width:1500px;
     height:715px;
     padding:10px;
     margin-left: 150px;
     border: 0px;
 }
-.navbar {
+nav {                               /* Dit is de navigatie menu met de kleur #353333 en font "Cabin" */
     overflow: hidden;
     background-color: #353333;
     font-family: Cabin;
     position: sticky;
 }
 
-.navbar a {
+nav a {                             /* Hier wordt de tekst gestyled doormiddel van een witte kleur en de grootte 16px */
     float: left;
     font-size: 16px;
     color: white;
@@ -55,14 +79,8 @@ iframe{
     width: 282px;
 }
 
-.navbar a:hover{
+nav a:hover{                        /* De kleur veranderd naar zwart wanneer er gehoverd wordt op het menu. */
     background-color: black;
-}
-
-
-.responsive{
-    float:left;
-    padding: 70px;
 }
 
 div.desc {
@@ -74,7 +92,7 @@ div.desc {
     color:white;
 }
 
-footer{
+footer{                         /* Dit is de vorm/achtergrond van de footer met de kleur #353333. */
     background-color: #353333;
     float:left;
     width: 100%;
@@ -90,13 +108,45 @@ div.desc1 {
     font-family: Cabin;
     color:white;
 }
+a{  
+    color:white;
+    text-decoration: none;
 
-
-
-.voorstelling{
-    float: left;
-    padding:15px;
 }
+
+table{                      /* Dit is de table op de bestel.html */
+    float:left;
+    width:100%;
+    padding:20px;
+    margin-left:150px;
+}
+th{
+    padding:50px;
+     margin-right:auto;
+    float:left;
+     text-align: left;
+    
+}
+td{
+    padding:40px;
+    float:left;
+    margin-left:auto;
+    width:70px;
+}
+
+ul{
+
+    margin-left:60px;
+    list-style-type: none;
+    font-weight: bold;
+    font-size:16px;
+    font-family: Cabin;
+}
+li{
+    float:left;
+    margin: 0 136px 20px 0;
+}
+
 
 #foto{
 
@@ -105,30 +155,32 @@ div.desc1 {
     margin-left: 150px;
 }
 
-#nieuwsbrief{
+#nieuwsbrief{               /* positie van de nieuwsbrief. */
     margin-left:100px;
 
 }
 
-#submit{
+#submit{                    /* De submit button van de nieuwsbrief met een gekozen positie. */ 
     margin-left:107px;
 }
 
-#rectangle{
+#rectangle{                 /* Dit is de rectangle op bijna elke pagina waarbij er een wit achtergrond getoond wordt. */
     width: 1700px;
     height: 1200px;
     background-color: white;
     margin-left:100px;
 }
 
-#rectangle1{
-    width: 1700px;
-    height: 800px;
+#rectangle1{                /* Dit is een aangepaste rectangle. */
+    width: 1600px;
+    height: 1200px;
     background-color: white;
     margin-left:100px;
+    margin-top: 50px;
+    margin-bottom:50px;
 }
 
-#rectangle2{
+#rectangle2{            /* Dit is een aangepaste rectangle. */
     float:left;
     height:100px;
     width:100px;
@@ -136,8 +188,15 @@ div.desc1 {
     margin-left:1300px;
     margin-bottom:700px;
 }
+#rectangle4{               /* Dit is een aangepaste rectangle. */
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    margin-left:100px;
+    margin-bottom:30px;
+}
 
-#hf1{
+#hf1{                   
     color:black;
 }
 
@@ -149,15 +208,6 @@ div.desc1 {
     height: 600px;
 }
 
-.info{
-    margin-left:100px;
-}
-
-.wrapper1{
-
-    margin-top: 100px;
-    width:600px;
-}
 
 #contact{
     border:1px black;
@@ -201,5 +251,438 @@ input[type=text], input[type=password] {
     width:300px;
     float:left;
     margin-left:50px;
+    margin-top:auto;
+    
+    
+}
 
+#text1{
+    text-align: left;
+    margin-left:230px;
+    font-family: Cabin;
+}
+
+input[type=text], select {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top:50px;
+}
+
+input[type=submit] {
+    width: 80%;
+    background-color: #C51449;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left:40px;
+}
+
+input[type=submit]:hover {
+    background-color: #AF0C43;
+}
+#submit{
+    width:50%;
+}
+#submit1{
+    width:20%;
+    margin-left:90px;
+}
+#submit2{
+    width:10%;
+    margin-left:680px;
+}
+#vnaam{
+    margin-bottom: auto;
+    margin-left:40px;
+      height:50px;
+    width:400px;
+}
+#anaam{
+    margin-top: 30px;
+    margin-left:40px;
+    height:50px;
+    width:400px;
+}
+#message{
+    margin-top: 30px;
+     margin-left:40px;
+    height:100px;
+    width: 400px;
+}
+
+#formulier1{
+    border: 1px solid black;
+    width:500px;
+    height:450px;
+    margin-left:100px;
+    margin-top: 10px;
+}
+label{
+    margin-left:40px;
+    margin-top:10px;
+}
+#formulierTitel{
+    color:black;
+    margin-top:200px;
+}
+.contactText{
+    margin-left:100px;
+    margin-top:100px;
+}
+
+article{
+    height:700px;
+    width:400px;
+    background-color: #C51449;
+    float: right;
+    margin-right:100px;
+    color:white;
+        
+}
+h4{
+    margin-left:20px;
+}
+h5{
+    text-align: center;
+    font-size:20px;
+    
+}
+#tijden{
+    margin-left:20px;
+    color:white;
+}
+#adres{
+    margin-top:20px;
+    color:white;
+    font-weight: bold;
+    margin-left:10px;
+}
+iframe{
+    width:350px;
+    height:200px;
+    margin-left:800px
+    float:left;
+}
+
+#video{
+    width:1500px;
+    height: 500px;
+}
+.datum{
+    color:#C51449;
+    margin-left:750px;
+}
+
+.datum > p{
+ color:white;
+}
+
+aside{
+    margin-left:200px;
+    margin-bottom:100px;
+}
+#agenda2{
+    margin-right:800px;
+    float:right;
+    width:220px;
+    height:50px;
+}
+#line{
+    width:100px;
+    height:100px;
+    color:white;
+}
+button{
+    width: 10%;
+    background-color: #C51449;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left:700px;
+}
+button:hover{
+    background-color: #AF0C43;
+}
+#button1:hover{
+       background-color: #AF0C43;
+}
+#button1{
+    width: 20%;
+    background-color: #C51449;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left:700px;
+    float:left;
+}
+
+#button2{
+    width: 20%;
+    background-color: #C51449;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 25%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:auto;
+
+   
+}
+#button3{
+    width: 20%;
+    background-color: #C51449;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:auto;
+    margin-left:100px;
+    
+}
+
+
+
+#voorstellingImg{
+    margin-left:100px;
+    width:700px;
+    height:auto;
+    
+}
+
+.lijn{
+    width: 1200px;
+    height: 47px;
+    margin-left:200px;
+    margin-top:50px;
+    border-bottom: 1px solid black;
+    position: absolute;
+}
+#line{
+    width: 1200px;
+    height: 47px;
+    margin-top:28px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    float:right;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border-radius: 25px;
+    border-radius: 25px;
+    background: white;
+    border:1px solid black;
+    float:left;
+    margin-left: 200px;
+    margin-top:20px;
+    text-align: center;
+    line-height:50px;
+}
+
+.circle1{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border-radius: 25px;
+    border-radius: 25px;
+    background: #C51449;
+    border:1px solid black;
+    float:left;
+    margin-left: 200px;
+    margin-top:20px;
+    text-align: center;
+    line-height:50px;
+    color:white;
+}
+.tekst{
+    float:left;
+    margin-left:250px;
+    margin-top:110px;
+}
+#box1{
+    float:right;
+    margin-top:50px;
+    margin-right:1100px;
+}
+#type1{
+    margin-left:60px;
+    list-style-type: none;
+    font-weight: bold;
+    font-size:16px;
+    font-family: Cabin;
+    
+    
+}
+.type{
+
+}
+.aantal{
+    float:right;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    width:450px;
+    height:500px;
+    
+}
+.prijs{
+    width:450px;
+    height:500px;
+    margin-right:200px;
+    float:left;
+}
+#bericht{
+    color:black;
+}
+#podium{
+    margin:0 25%;
+}
+
+.geslacht{
+    float:left;
+    margin-top:200px;
+    margin-left:200px;
+}
+
+.naam{
+    float:left;
+    margin-left:95px;
+}
+.verblijf{
+    float:left;
+    margin-left:100px;
+}
+.verblijf1{
+    float:left;
+}
+.betaling{
+    float:left;
+    margin-top:100px;
+    margin-left:400px;
+    background-color: 810D30;
+    width:400px;
+    color:white;
+}
+.levering{
+    float:right;
+    margin-top:10px;;
+    margin-right:800px;
+    background-color: 810D30;
+    width:400px;
+    color:white;
+}
+.samenvatting{
+    float:right;
+    margin-top:15px;
+    margin-right:800px;
+    background-color: 810D30;
+    width:400px;
+    height:100px;
+    color:white;
+}
+.email{
+    float:right;
+     margin-top:15px;
+    margin-right:800px;
+    background-color: 810D30;
+    width:400px;
+    height:100px;
+    color:white;
+}
+#email{
+    margin-left:20px;
+}
+.bevestig{
+    width:500px;
+    height:300px;
+    background-color: 810D30;
+    margin-left:500px;
+    margin-top:200px;
+    float:left;
+    color:white;
+}
+.info{
+    float:left;
+    margin-top:100px;
+    width:500px;
+    height:100px
+    margin-left:200px;
+    font-weight: bold;
+  
+}
+
+#ticket{
+    margin-top:200px;
+    width:1000px
+    height:1000px;
+}
+.lijst{
+    float:left;
+}
+.right{
+    float:right;
+}
+
+.p{
+    color:white;
+    margin-left:100px;
+    font-family: Cabin;
+}
+.breed{
+    width:70px;
+}
+.klik{
+    float:left;
+    width:100%;  
+}
+.social{
+    float:right;
+    width:200px;
+    height:100px;
+}
+#fb{
+    width:60px;
+    height:auto;
+}
+.nieuws{
+    width:400px;
+    margin:0px;
+}
+
+.responsive{
+    float:left;
+    padding: 70px;
+}
+
+.voorstelling{
+    float: left;
+    padding:15px;
+}
+
+.info{
+    margin-left:100px;
+}
+
+.wrapper1{
+
+    margin-top: 100px;
+    width:600px;
 }

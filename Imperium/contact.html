@@ -5,59 +5,82 @@
 	<meta charset="UTF-8" />
 	<title>Imperium</title>
 	<link href="css/imperium.css" type="text/css" rel="stylesheet">
-
-
 </head>
-
 <body>
 	<header>
      <a href="index.html">
-        <img id="logo" src="images/logo.png" alt="logo" />
+        <img id="logo" src="images/logo.png" alt="logo" /> <!-- Dit is het logo van het Imperium en dient ook als een home button -->
     </a>
     </header>
-    <div class="navbar">
+    <nav>
         <a href="agenda.html">Agenda</a>
         <a href="fotoboek.html">Fotoboek</a>
-        <a href="theater.html">Theater Huren</a>
+        <a href="theater.html">Theater Huren</a>             <!-- Dit is de navigatie menu -->
         <a href="reserveren.html">Reserveren</a>
         <a href="over.html">Over ons</a>
         <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="row">
-        <div class="column">
+    </nav>
+    <section>
+        <div id="rectangle">
             <h1 id="hf1">Contact</h1>
-            <div class="wrapper1">
-                <div class="info">
-                 <p>We zijn hier om je vragen over ons theater te beantwoorden.<br> Neem contact met ons op en we zullen zo snel mogelijk reageren.</p>
-                 <p>Zelfs als er iets is dat u altijd al wilde ervaren en niet kunt vinden op de site,<br> laat het ons weten en we beloven dat we ons best zullen doen om <br>het voor u te vinden.</p>
-                 <p>Via onderstaand formulier is het mogelijk om een bericht<br> te sturen naar het Imperium.</p>
+            <div class="contactText">                        <!-- Dit is de class "contactText". Dit dient voor de tekst.-->
+                <p> We zijn hier om je vragen over ons theater te beantwoorden.</p>
+                <p>Neem contact met ons op en we zullen zo snel mogelijk reageren</p>
+                <p>Zelfs als er iets is dat u altijd al wilde ervaren en niet kunt vinden op de site, laat het ons weten</p>
+                <p>en we beloven dat we ons best zullen doen om het voor u te vinden.</p>
+                <p> Via onderstaand formulier is het mogelijk om een bericht te sturen naar het Imperium.</p>
+            </div>
+            <article>                                       <!-- Dit is de element article. Dit dient in dit geval voor de adres gegevens-->
+                <h4>Openingstijden:</h4>
+                    <p id="tijden">Ma: Gesloten</p>
+                    <p id="tijden">Di: Gesloten</p>
+                    <p id=tijden>Wo: Gesloten</p>
+                    <p id=tijden>Vr: 18:00 - 22:00</p>
+                    <p id=tijden>Za: 18:00 - 22:00</p>
+                    <p id=tijden>Zo: 18:00 - 22:00</p>
+                <div id="adres">
+                    <p id="adres">Adres: Oude Vest 33e</p>
+                    <p id="adres">2312 XR Leiden</p>
+                    <p id="adres">Telefoonnummer:071 514 1035</p>
+                    <p id="adres">Email:Imperiumtheater@hotmail.com</p>
                 </div>
-                <h3 id="bericht">Stuur ons een bericht:</h3>
-                <form method="GET">
-									<!-- REVIEW
-									je mist nog een attribuut
-									-->
-                    <input type="text" name="naam" placeholder="Naam" value=""><br>
-                    <input type="text" name="email" placeholder="E-mailadres" value=""><br>
-                    <input type="text" name="bericht" id="bericht" placeholder="Uw bericht" value=""> <br>
-                    <input type="submit" id="submit" value="Verstuur">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.467023447569!2d4.48609531579413!3d52.162201779748045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c6ecef888c2f%3A0x1841f7f64e1614f1!2sImperium!5e0!3m2!1snl!2snl!4v1523871073388"></iframe>  <!-- Dit is een embed code, waarbij de locatie/kaart van het Imperium getoond wordt. -->
+            </article>
+            <div>                                           <!-- Dit div element laat een contact formulier zien. -->
+                <h3 id="formulierTitel">Stuur ons een bericht:</h3>
+                <form id= "formulier1" action="/action_page.php">
+                    <label for="vnaam">Voornaam:</label><br>
+                        <input type="text" id="vnaam" name="vnaam" placeholder="Vul hier uw voornaam"><br>
+                    <label for="anaam">Achternaam:</label><br>
+                        <input type="text" id="anaam" name="anaam" placeholder="Vul hier uw achternaam"><br>
+                    <label for="bericht">Bericht:</label><br>
+                        <input type="text" id="message" name="bericht" placeholder="Vul hier uw bericht"><br>
+                    <input type="submit" value="Submit">
                 </form>
-             </div>
+            </div>
         </div>
-    </div>
-        <div class="column">
-            <form method="get"></form>
+    </section>
+    <footer>               <!-- Dit is de footer -->
+        <div class="nieuws">
+            <h3>Nieuwsbrief?</h3>
+                <p class='p'>Wilt u op de hoogte gehouden worden van onze activiteiten,<br> schrijf u dan meteen in voor de nieuwsbrief. </p>
+            <form method="GET" id="nieuwsbrief">    <!-- Dit is een formulier,waarbij er ingeschreven kan worden voor de nieuwsbrief -->
+                <input type="email" id="nieuwsbrief" name="nieuwsbrief" value=""> <br>
+                <input type="submit" id="submit" value="Verstuur">
+            </form>
         </div>
-
-
-	<footer>
-    <h3>Nieuwsbrief?</h3>
-        <p class='p'>Wilt u op de hoogte gehouden worden van onze activiteiten,<br> schrijf u dan meteen in voor de nieuwsbrief. </p>
-    <form method="GET" id="nieuwsbrief">
-        <input type="text" id="nieuwsbrief" name="nieuwsbrief" value=""> <br>
-          <input type="submit" id="submit" value="Verstuur">
-    </form>
+        <div class="social">                    <!-- Dit is de class "social" en dient voor de social media. -->
+            <h3>Social media</h3>
+                <a href="https://www.facebook.com/ToneelgroepImperium?fref=ts">
+                    <img id="fb" src="images/facebook.png" alt="facebookLogo" />
+                </a>
+                <a href="https://twitter.com/imperiumtheater">
+                    <img id="fb" src="images/twitter.png" alt="twitterLogo" />
+                </a>
+                <a href="https://www.instagram.com/explore/locations/1627979/imperium-theater/">
+                    <img id="fb" src="images/insta.png" alt="instagramLogo" />
+                </a>
+        </div>
     </footer>
 </body>
 </html>

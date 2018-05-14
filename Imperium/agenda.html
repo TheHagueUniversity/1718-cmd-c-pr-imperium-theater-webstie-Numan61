@@ -5,34 +5,78 @@
 	<meta charset="UTF-8" />
 	<title>Imperium</title>
 	<link href="css/imperium.css" type="text/css" rel="stylesheet">
-
-
 </head>
-
 <body>
 	<header>
-     <a href="index.html">
-        <img id="logo" src="images/logo.png" alt="logo" />
-    </a>
+        <a href="index.html">
+            <img id="logo" src="images/logo.png" alt="logo" />      <!-- Dit is het logo van het Imperium en dient ook als een home button -->
+        </a>
     </header>
-    <div class="navbar">
+    <nav>                                                   <!-- Dit is de navigatie menu -->
         <a href="agenda.html">Agenda</a>
         <a href="fotoboek.html">Fotoboek</a>
         <a href="theater.html">Theater Huren</a>
-        <a href="reserveren.html">Reserveren</a>
+        <a href="reserveren.html">Reserveren</a>    
         <a href="over.html">Over ons</a>
         <a href="contact.html">Contact</a>
-    </div>
-
-	<h1>Agenda</h1>
-
-	<footer>
-    <h3>Nieuwsbrief?</h3>
-        <p class="p">Wilt u op de hoogte gehouden worden van onze activiteiten,<br> schrijf u dan meteen in voor de nieuwsbrief. </p>
-    <form method="GET" id="nieuwsbrief">
-        <input type="text" id="nieuwsbrief" name="nieuwsbrief" value=""> <br>
-          <input type="submit" id="submit" value="Verstuur">
-    </form>
+    </nav>
+    <section>                                               <!-- De section element toont alle voorstellingen. -->
+        <h1>Agenda</h1>
+            <div class="datum">                             <!-- De class "Datum" toont twee datum inputten, zodat er gefilterd kan worden op een specifieke dag. -->
+                <p>Vanaf:<input type="date" name="datum" id=datum1>
+                Tot:<input type="date" name="datum" id="datum2"></p>
+                <input type="submit" id="submit1" value="Filter">
+            </div>
+            <h2>Februari</h2>
+                <aside>
+                    <img id="img1" src="images/pic1.png" alt="Afbeelding voorstelling" />
+                    <h3 id="agenda2">Over iedereen die er niet is</h3>
+                    <p1>24/02/18 | 19:00</p1>
+                    <button><a href="voorstelling.html">Meer info</a></button>
+                    <div id="line"></div>
+                </aside>
+                <aside>
+                    <img id="img1" src="images/pic2.png" alt="Afbeelding voorstelling" />
+                    <h3 id="agenda2">De Canadese Muur</h3>
+                    <p1>24/02/18 | 21:00</p1>
+                    <button><a href="voorstelling.html">Meer info</a></button>
+                    <div id="line"></div>
+                </aside>
+                <aside>
+                    <img id="img1" src="images/pic1.png" alt="Afbeelding voorstelling" />
+                    <h3 id="agenda2">Over iedereen die er niet is</h3>
+                    <p1>25/02/18 | 19:00</p1>
+                    <button><a href="voorstelling.html">Meer info</a></button>
+                    <div id="line"></div>
+                </aside>
+                <aside>
+                    <img id="img1" src="images/pic2.png" alt="Afbeelding voorstelling"  />
+                    <h3 id="agenda2" >De Canadese Muur</h3>
+                    <p1>25/02/18 | 19:00</p1>
+                    <button><a href="voorstelling.html">Meer info</a></button>
+                </aside>
+    </section>
+    <footer>               <!-- Dit is de footer -->
+        <div class="nieuws">
+            <h3>Nieuwsbrief?</h3>
+                <p class='p'>Wilt u op de hoogte gehouden worden van onze activiteiten,<br> schrijf u dan meteen in voor de nieuwsbrief. </p>
+            <form method="GET" id="nieuwsbrief">    <!-- Dit is een formulier,waarbij er ingeschreven kan worden voor de nieuwsbrief -->
+                <input type="email" id="nieuwsbrief" name="nieuwsbrief" value=""> <br>
+                <input type="submit" id="submit" value="Verstuur">
+            </form>
+        </div>
+        <div class="social">    <!-- Dit is de class "social" en dient voor de social media. -->
+            <h3>Social media</h3>
+                <a href="https://www.facebook.com/ToneelgroepImperium?fref=ts">
+                    <img id="fb" src="images/facebook.png" alt="facebookLogo" />
+                </a>
+                <a href="https://twitter.com/imperiumtheater">
+                    <img id="fb" src="images/twitter.png" alt="twitterLogo" />
+                </a>
+                <a href="https://www.instagram.com/explore/locations/1627979/imperium-theater/">
+                    <img id="fb" src="images/insta.png" alt="instagramLogo" />
+                </a>
+        </div>
     </footer>
 </body>
 </html>

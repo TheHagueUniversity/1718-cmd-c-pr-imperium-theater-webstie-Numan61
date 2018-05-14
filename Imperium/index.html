@@ -8,112 +8,94 @@ Waar zijn de comments?
 	<meta charset="UTF-8" />
 	<title>Imperium</title>
 	<link href="css/imperium.css" type="text/css" rel="stylesheet">
-
-
 </head>
-
 <body>
 	<header>
        <a href="index.html">
-            <img id="logo" src="images/logo.png" alt="logo" />
+            <img id="logo" src="images/logo.png" alt="logo" />  <!-- Dit is het logo van het Imperium en dient ook als een home button -->
         </a>
     </header>
-    <div class="navbar">
-			<!-- REVIEW
-			gebruik geen div voor de navigatie maar een <nav>
-			het is gebruikelijk om een menu met een ul uit te werken. Alle menu-links zijn lijstitems
-  		-->
+    <nav>
         <a href="agenda.html">Agenda</a>
-        <a href="fotoboek.html">Fotoboek</a>
+        <a href="fotoboek.html">Fotoboek</a>            <!-- Dit is de navigatie menu -->
         <a href="theater.html">Theater Huren</a>
         <a href="reserveren.html">Reserveren</a>
         <a href="over.html">Over ons</a>
         <a href="contact.html">Contact</a>
-    </div>
-		<!-- REVIEW
-		lay-out element? <section> of <main>
-	  -->
-
-	<h1>Welkom bij het Imperium</h1>
-	<iframe
-		src="https://www.youtube.com/embed/7GkHjIkR460">
-	</iframe>
-<!-- REVIEW
-hier zou je een comment kunnen plaatsen wat voor film het is
--->
-	<br>
-<!-- REVIEW
-<br> mag je niet als styling (margin) gebruiken
--->
-    <div class="voorstelling">
-			<!-- REVIEW
-			dit is een <article>
-			-->
-        <div class="gallery1">
-         <a href="images/pic1.png"></a>
-            <img id='foto' src="images/pic1.png">
-						<!-- REVIEW
-						img heeft verplichte attributen
-						-->
-        </div>
-        <div class="desc1">Over iedereen die er niet is</div>
-    </div>
-
-    <div class="voorstelling">
-        <div class="gallery1">
-         <a  href="images/pic2.png"></a>
-            <img id='foto' src="images/pic2.png">
-        </div>
-        <div class="desc1">De Canadese Muur</div>
-    </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<!-- REVIEW
-		styling mag niet in html
-		-->
-    <div class="vier">
-        <div class="responsive">
-            <div class="gallery">
-             <a href="images/pic3.jpg"></a>
-                <img src="images/pic3.jpg">
+    </nav>
+    <section>
+        <h1>Welkom bij het Imperium</h1>
+        <iframe id="video"
+            src="https://www.youtube.com/embed/7GkHjIkR460">  <!-- Dit is een teaser video van het Imperium. Het is niet echt van het Imperium,omdat er geen video clipjes beschikbaar zijn -->
+        </iframe>
+        <div class="voorstelling">                            <!-- Dit is de class "voorstelling" en dit dient voor de twee voorstellingen die getoond wordt, waarbij er geklikt kan worden--> 
+            <div class="gallery1">
+                <a href="images/pic1.png"></a>
+                    <img id='foto' src="images/pic1.png" alt="voorstelling foto">
             </div>
-            <div class="desc">Biest</div>
+            <div class="desc1">Over iedereen die er niet is</div>
+                <a href="voorstelling.html">Klik hier!</a>
         </div>
-
-        <div class="responsive">
-            <div class="gallery">
-             <a href="images/pic4.jpg"></a>
-                <img src="images/pic4.jpg">
+        <div class="voorstelling">
+            <div class="gallery1">
+                <a  href="images/pic2.png"></a>
+                    <img id='foto' src="images/pic2.png">
             </div>
-            <div class="desc">Killer Joe</div>
+            <div class="desc1">De Canadese Muur</div>
+                <a href="voorstelling.html">Klik hier!</a>
         </div>
-
-        <div class="responsive">
-            <div class="gallery">
-             <a href="images/pic5.jpg"></a>
-                <img src="images/pic5.jpg">
+        <div class="vier">                                  <!-- Dit is de class "vier" dit geeft de vier voorstellingen in het klein waarbij ze naast elkaar weergegeven worden -->
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="images/pic3.jpg"></a>
+                        <img src="images/pic3.jpg">
+                </div>
+                <div class="desc">Biest</div>
             </div>
-            <div class="desc">De Gouden Draak</div>
-        </div>
-
-        <div class="responsive">
-            <div class="gallery">
-             <a href="images/pic6.jpg"></a>
-                <img src="images/pic6.jpg">
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="images/pic4.jpg"></a>
+                        <img src="images/pic4.jpg">
+                </div>
+                <div class="desc">Killer Joe</div>
             </div>
-            <div class="desc">Het Zouthuis</div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="images/pic5.jpg"></a>
+                        <img src="images/pic5.jpg">
+                </div>
+                <div class="desc">De Gouden Draak</div>
+            </div>
+            <div class="responsive">
+                <div class="gallery">
+                    <a href="images/pic6.jpg"></a>
+                        <img src="images/pic6.jpg">
+                </div>
+                <div class="desc">Het Zouthuis</div>
+            </div>
         </div>
-    </div>
-	<footer>
-    <h3>Nieuwsbrief?</h3>
-        <p class='p'>Wilt u op de hoogte gehouden worden van onze activiteiten,<br> schrijf u dan meteen in voor de nieuwsbrief. </p>
-    <form method="GET" id="nieuwsbrief">
-        <input type="text" id="nieuwsbrief" name="nieuwsbrief" value=""> <br>
-				<!-- REVIEW
-				wat moeten gebruikers invullen in bovenstaand veld? Hun email-adres? Welk input type moet je dan gebruiken?
-				-->
-          <input type="submit" id="submit" value="Verstuur">
-    </form>
+    </section>
+	<footer>                                       <!-- Dit is de footer -->
+        <div class="nieuws">
+            <h3>Nieuwsbrief?</h3>
+                <p class='p'>Wilt u op de hoogte gehouden worden van onze activiteiten,<br> schrijf u dan meteen in voor de nieuwsbrief. </p>
+            <form method="GET" id="nieuwsbrief">        <!-- Dit is een formulier,waarbij er ingeschreven kan worden voor de nieuwsbrief -->
+                <input type="email" id="nieuwsbrief" name="nieuwsbrief" value=""> <br>
+                  <input type="submit" id="submit" value="Verstuur">
+            </form>
+        </div>
+        <div class="social">                       <!-- Dit is de class "social" en dient voor de social media. -->
+            <h3>Social media</h3>
+            <a href="https://www.facebook.com/ToneelgroepImperium?fref=ts">
+                <img id="fb" src="images/facebook.png" alt="facebookLogo" />
+            </a>
+            <a href="https://twitter.com/imperiumtheater">
+                <img id="fb" src="images/twitter.png" alt="twitterLogo" />
+            </a>
+             <a href="https://www.instagram.com/explore/locations/1627979/imperium-theater/">
+                <img id="fb" src="images/insta.png" alt="instagramLogo" />
+            </a>
+        </div>
     </footer>
 </body>
 </html>
